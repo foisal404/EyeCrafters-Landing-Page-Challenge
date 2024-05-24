@@ -1,7 +1,9 @@
+import SlideBanner from "../SlideBanner";
+
 const Home = () => {
   return (
     <>
-      <p>This is home</p>
+      <SlideBanner />
     </>
   );
 };
