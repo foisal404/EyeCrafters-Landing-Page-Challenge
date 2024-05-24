@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Jost", sans-serif;
+}
+
+.primary-Color{
+    @apply text-[#383838];
+}
+.secondary-Color{
+    @apply text-[#545454];
+}
