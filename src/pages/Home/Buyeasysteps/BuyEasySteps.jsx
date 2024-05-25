@@ -7,17 +7,13 @@ import VectorIcon from "../../../assets/icons/Vector.png";
 
 const BuyEasySteps = () => {
   return (
-    <section className="max-w-7xl max-h-[538px] mx-auto">
-      <div className="w-full h-full flex flex-col md:flex-row items-center  justify-around md:relative md:top-[-70px] lg:top-[-70px] z-20 gap-3 md:gap-0 sm:py-10 md:py-0">
+    <section className="max-w-7xl  mx-auto">
+      <div className="w-full h-full flex flex-col md:flex-row items-center  justify-around md:relative md:top-[-70px] lg:top-[-70px] z-20 gap-3 md:gap-0 py-10 md:py-0">
         <div>
           <img src={SearchIcon} alt="" className="mx-auto" />
           <div>
-            <h2 className="text-center text-xl primary-Color mt-10 mb-3 font-bold">
-              Search you sunglass
-            </h2>
-            <p className="text-center text-base secondary-Color font-normal">
-              Shop Stylish Eyewear Now
-            </p>
+            <h2 className="icon-heading">Search you sunglass</h2>
+            <p className="icon-text">Shop Stylish Eyewear Now</p>
           </div>
         </div>
         <div>
@@ -26,12 +22,8 @@ const BuyEasySteps = () => {
         <div>
           <img src={SelectIcon} alt="" className="mx-auto" />
           <div>
-            <h2 className="text-center text-xl primary-Color mt-10 mb-3 font-bold">
-              Search you sunglass
-            </h2>
-            <p className="text-center text-base secondary-Color font-normal">
-              Shop Stylish Eyewear Now
-            </p>
+            <h2 className="icon-heading">Select Sunglass</h2>
+            <p className="icon-text">Shade Your Style</p>
           </div>
         </div>
         <div>
@@ -41,12 +33,8 @@ const BuyEasySteps = () => {
         <div>
           <img src={PayIcon} alt="" className="mx-auto" />
           <div>
-            <h2 className="text-center text-xl primary-Color mt-10 mb-3 font-bold">
-              Search you sunglass
-            </h2>
-            <p className="text-center text-base secondary-Color font-normal">
-              Shop Stylish Eyewear Now
-            </p>
+            <h2 className="icon-heading">Make Payment</h2>
+            <p className="icon-text">Securely Checkout Now</p>
           </div>
         </div>
 
@@ -56,12 +44,8 @@ const BuyEasySteps = () => {
         <div>
           <img src={RecIcon} alt="" className="mx-auto" />
           <div>
-            <h2 className="text-center text-xl primary-Color mt-10 mb-3 font-bold">
-              Search you sunglass
-            </h2>
-            <p className="text-center text-base secondary-Color font-normal">
-              Shop Stylish Eyewear Now
-            </p>
+            <h2 className="icon-heading">Received Product</h2>
+            <p className="icon-text">See the World Clearly</p>
           </div>
         </div>
       </div>
