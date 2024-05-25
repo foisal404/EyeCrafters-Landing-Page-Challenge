@@ -1,8 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import logoPNG from "../../../assets/Logo.png";
 import profilePNG from "../../../assets/profile.png";
 import shopPNG from "../../../assets/shop.png";
 const Navbar = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const storedCartItems =
+        JSON.parse(localStorage.getItem("products")) || [];
+      setCartItems(storedCartItems);
+    }, 1000); // 1000 milliseconds = 1 second
+
+    return () => clearInterval(interval);
+  }, [setCartItems]);
+
+  console.log(cartItems.length);
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -13,16 +27,15 @@ const Navbar = () => {
     <nav className="bg-white w-full z-20 top-0 start-0">
       <div className="max-w-full flex flex-wrap items-center justify-between mx-auto md:py-[30px] md:px-[90px] p-5">
         <a className="flex items-center cursor-pointer ">
-          <img
-            src={logoPNG}
-            className="md:h-[47px] md:w-[194px]"
-            alt="Flowbite Logo"
-          />
+          <img src={logoPNG} className="md:h-[47px] md:w-[194px]" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap items-center"></span>
         </a>
         <div className="flex md:order-2 space-x-5 rtl:space-x-reverse items-center">
-          <a href="#" className="w-[22px] h-[22px]">
+          <a href="#" className="w-[22px] h-[22px] relative">
             <img src={shopPNG} alt="" className="w-full h-full" />
+            <p className="bg-[#FFE6AD] rounded-full text-xs absolute top-[-10px] left-3 z-10 ms-1 w-4 ps-1 font-bold primary-Color">
+              {cartItems?.length}
+            </p>
           </a>
           <a href="#" className="w-[22px] h-[22px]">
             <img src={profilePNG} className="w-full h-full" />
