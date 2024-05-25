@@ -15,6 +15,9 @@
 .secondary-Color{
     @apply text-[#545454];
 }
+.dark-Color{
+    @apply text-[#5a5a5a];
+}
 .swiper {
     width: 100%;
     max-height: 57rem;
@@ -26,7 +29,6 @@
     font-size: 18px;
     background: #fff;
     height: 100%;
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,4 +59,38 @@
   }
   .aria-text-button{
     @apply bg-[#383838] py-3 rounded-md text-base md:text-lg font-bold text-white px-5 md:px-10 lg:px-6 xl:px-10;
+  }
+  .tab-list {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    @apply top-0 md:top-[-30px] my-5;
+  }
+  
+  .tab:hover {
+    background-color: #ddd;
+  }
+  
+  .tab--selected {
+    color: #383838;
+    border: 1px solid #383838;
+  }
+  
+  .tab-panel {
+    /* padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #fff; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
   }
