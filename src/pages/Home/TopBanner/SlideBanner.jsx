@@ -11,8 +11,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 //images
 
-import SliderOne from "../../assets/Banner.png";
-import shopii from "../../assets/shopii.png";
+import SliderOne from "../../../assets/Banner.png";
+import shopii from "../../../assets/shopii.png";
 
 const SlideBanner = () => {
   return (
