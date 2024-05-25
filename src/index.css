@@ -51,3 +51,10 @@
   .icon-text{
     @apply text-center text-base secondary-Color font-normal;
   }
+
+  .aria-text-section{
+    @apply max-w-[483px] max-h-[225px] bg-white text-center absolute z-10 bottom-3 md:bottom-5 lg:bottom-3 xl:bottom-10 left-12 md:left-12 xl:left-20 p-5 lg:p-7 xl:p-9 rounded-md;
+  }
+  .aria-text-button{
+    @apply bg-[#383838] py-3 rounded-md text-base md:text-lg font-bold text-white px-5 md:px-10 lg:px-6 xl:px-10;
+  }
